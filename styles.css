@@ -1,6 +1,7 @@
-/* CSS BY YOUR NAME */
+/* CSS BY YOUR Marcelle Hileman*/
 
 /* IMPORTED FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 /* IMPORT "INTER" FROM GOOGLE FONTS"
 
 /* CSS RESET */
@@ -63,6 +64,14 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  min-width: 400px;
+}
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
@@ -74,7 +83,7 @@ table {
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+ .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -84,10 +93,43 @@ table {
     overflow: hidden;
 }
 
-/* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
-    content: "";
+.hero h2{
+    color: var(--white);
+    font-size: 3rem;
+}
 
+.hero p{
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.button{
+    display: block;
+    margin: 0 auto;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 1000;
+    background-color: var(--blue);
+    padding: 15px;
+    border: solid var(--blue);
+    border-radius: 20px;
+}
+
+header {
+    background-color: var(--black);
+    padding-left: 30px;
+    border-bottom: 3px solid var(--blue);
+    display: flex;
+    margin: 0 auto;
+}
+
+header h1{
+    color: var(--white);
+}
+
+/* ADD FLOATING SVG LOGO BEFORE THE H1 */
+ .head-text::before{
+    content: "";
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -113,7 +155,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 0.5 ease-in;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
