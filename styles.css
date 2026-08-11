@@ -63,6 +63,7 @@ table {
     --font: "Inter", sans-serif;
 }
 
+
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 body {
   font-family: "Oswald", sans-serif;
@@ -93,19 +94,27 @@ body {
     overflow: hidden;
 }
 
+.hero-items {
+    backdrop-filter: blur(20px);
+    padding: 20px;
+}
+
 .hero h2{
     color: var(--white);
     font-size: 3rem;
+    padding-bottom: 10px;
 }
 
 .hero p{
     color: var(--white);
     font-size: 2rem;
+    padding-bottom: 10px;
 }
 
 .button{
     display: block;
     margin: 0 auto;
+    font-size: 1.5rem;
     color: var(--white);
     text-decoration: none;
     font-weight: 1000;
@@ -113,11 +122,19 @@ body {
     padding: 15px;
     border: solid var(--blue);
     border-radius: 20px;
+    width: 30vw;
+}
+
+.button:hover {
+    width: 45vw;
+    background-color: var(--red);
+    border: solid var(--red);
+    transition: 0.3s ease-in;
 }
 
 header {
     background-color: var(--black);
-    padding-left: 30px;
+    padding-left: 1rem 0;
     border-bottom: 3px solid var(--blue);
     display: flex;
     margin: 0 auto;
@@ -128,14 +145,226 @@ header h1{
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- .head-text::before{
+ .header-items > h1:before{
     content: "";
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
+    color: var(--blue);
 
 }
+
+#about h2{
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    color: var(--black);
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px; 
+}
+
+#about p{
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: 20px 30px;
+}
+
+#services h2 {
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    color: var(--black);
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-left: 40px;   
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    color: var(--white);
+    gap: 20px;
+    min-width: 650px;
+}
+
+.items h3{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.items p {
+    font-size: 1.5rem;
+}
+
+.offer-item1 {
+    background-color: var(--blue);
+    padding: 30px;
+    border: 15px solid var(--blue);
+    border-radius: 10px;
+}
+
+.offer-item2 {
+    background-color: var(--blue);
+    padding: 30px;
+    border: 15px solid var(--blue);
+    border-radius: 10px;
+}
+
+.offer-item3 {
+    background-color: var(--blue);
+    padding: 30px;
+    border: 15px solid var(--blue);
+    border-radius: 10px;
+}
+
+.offer-item4{
+    background-color: var(--blue);
+    padding: 30px;
+    border: 15px solid var(--blue);
+    border-radius: 10px;
+}
+
+.offer-item5 {
+    background-color: var(--blue);
+    padding: 30px;
+    border: 15px solid var(--blue);
+    border-radius: 10px;
+}
+
+.offer-item6 {
+    background-color: var(--blue);
+    padding: 30px;
+    border: 15px solid var(--blue);
+    border-radius: 10px;
+}
+
+#profits > h2{
+    color: var(--white);   
+}
+
+#profits > p{
+    color: var(--white);
+    font-size: 1.5rem; 
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+#profits h3{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 60px;
+}
+
+#profits {
+    background-color: var(--blue);
+    padding-bottom: 30px;
+}
+
+#contact {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#contact h2 {
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    color: var(--white);
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-left: 40px;      
+}
+
+#contact p {
+    color: var(--white);
+    font-size: 1.5rem; 
+    padding-left: 30px;
+    padding-bottom: 40px;    
+}
+
+form {
+    padding: 40px;
+
+}
+
+.form-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 40px;
+}
+
+textarea {
+    height: 120px;
+    border-bottom: 40px;
+}
+
+label {
+    width: 60vw;
+    font-size: 1.25rem;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+form button{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 1000;
+    background-color: var(--blue);
+    padding: 15px;
+    border: solid var(--blue);
+    border-radius: 20px;
+    width: 80vw;    
+}
+
+.footnote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    margin: 0 auto;
+    color: var(--white);
+    font-size: 1.25rem;
+    background-color: var(--black);
+    width: 80vw;
+}
+
+th {
+    border: 2px solid gray;
+    padding: 10px;    
+}
+
+td {
+    border: 2px solid gray;
+    padding: 10px; 
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -183,9 +412,33 @@ header h1{
 }
 
 
-/* MEDIA QUERIES (MEDIUM) */ 
+/* MEDIA QUERIES (MEDIUM) */
+@media screen and (min-width: 800px){
+    .button{
+        display: block;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 1000;
+        background-color: var(--blue);
+        padding: 20px;
+        border: solid var(--blue);
+        border-radius: 20px;
+        width: 30vw;
+    }
 
-    #results {
+    .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 30px;
+        padding-bottom: 50px;
+        color: var(--white);
+        gap: 20px;
+        min-width: 650px;
+    }
+
+    #profits {
         grid-template-columns: 1fr 1fr;
     }
     .results-container {
@@ -198,6 +451,22 @@ header h1{
     .bar-chart {
         width: 50%;
     }
+}
+
+
 
 
 /* MEDIA QUERIES (LARGE) */
+@media screen and (min-width: 1024px) {
+
+    .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 30px;
+        padding-bottom: 50px;
+        color: var(--white);
+        gap: 20px;
+        min-width: 650px;
+    }
+
+}
